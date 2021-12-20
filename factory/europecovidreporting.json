@@ -1,0 +1,9 @@
+{
+	"name": "europecovidreporting",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "2721a01f-fa13-4bed-ae09-870cd8976ee9",
+		"tenantId": "1dd8ab03-8355-496f-b19e-754786ce5708"
+	}
+}
