@@ -1,9 +1,9 @@
 {
 	"name": "coronareporting",
-	"location": "eastus",
+	"location": "southeastasia",
 	"identity": {
 		"type": "SystemAssigned",
-		"principalId": "4d4ef7ad-0857-4b86-a3b5-6f140f1b5416",
+		"principalId": "75303ca1-d823-4cd8-9b34-dc8a1b53d39a",
 		"tenantId": "1dd8ab03-8355-496f-b19e-754786ce5708"
 	}
 }
