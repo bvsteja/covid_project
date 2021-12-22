@@ -5,6 +5,11 @@
 			"referenceName": "ls_adls_covidreportingdl",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"filename": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
@@ -14,6 +19,7 @@
 					"value": "@dataset().filename",
 					"type": "Expression"
 				},
+				"folderPath": "ecdc",
 				"fileSystem": "raw"
 			},
 			"columnDelimiter": ",",

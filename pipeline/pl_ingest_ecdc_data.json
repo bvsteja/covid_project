@@ -50,23 +50,37 @@
 				"inputs": [
 					{
 						"referenceName": "ds_ecdc_raw_csv_http",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"relativeURL": {
+								"value": "@variables('sourceurl')",
+								"type": "Expression"
+							}
+						}
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "ds_ecdc_raw_csv_dl",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"filename": {
+								"value": "@variables('sinkfile')",
+								"type": "Expression"
+							}
+						}
 					}
 				]
 			}
 		],
-		"parameters": {
-			"sourceURL": {
-				"type": "string"
+		"variables": {
+			"sinkfile": {
+				"type": "String",
+				"defaultValue": "hospital_admission.csv"
 			},
-			"sink_filename": {
-				"type": "string"
+			"sourceurl": {
+				"type": "String",
+				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
 			}
 		},
 		"annotations": []
