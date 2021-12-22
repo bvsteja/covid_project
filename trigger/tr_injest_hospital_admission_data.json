@@ -3,13 +3,24 @@
 	"properties": {
 		"annotations": [],
 		"runtimeState": "Stopped",
-		"pipelines": [],
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data_pipeline_parameters",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sinkfile": "hospital_admission.csv",
+					"sourceurl": "covid19/hospitalicuadmissionrates/csv/data.csv"
+				}
+			}
+		],
 		"type": "ScheduleTrigger",
 		"typeProperties": {
 			"recurrence": {
-				"frequency": "Day",
+				"frequency": "Minute",
 				"interval": 1,
-				"startTime": "2021-12-22T17:38:00Z",
+				"startTime": "2021-12-22T17:47:00Z",
 				"timeZone": "UTC"
 			}
 		}
