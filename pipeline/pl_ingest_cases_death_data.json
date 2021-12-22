@@ -50,37 +50,23 @@
 				"inputs": [
 					{
 						"referenceName": "ds_cases_deaths_raw_csv_http",
-						"type": "DatasetReference",
-						"parameters": {
-							"relativeURL": {
-								"value": "@variables('sourceURL')",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				],
 				"outputs": [
 					{
 						"referenceName": "ds_cases_deaths_raw_csv_dl",
-						"type": "DatasetReference",
-						"parameters": {
-							"filename": {
-								"value": "@variables('sink_filename')",
-								"type": "Expression"
-							}
-						}
+						"type": "DatasetReference"
 					}
 				]
 			}
 		],
-		"variables": {
+		"parameters": {
 			"sourceURL": {
-				"type": "String",
-				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
+				"type": "string"
 			},
 			"sink_filename": {
-				"type": "String",
-				"defaultValue": "hospital_admissions.csv"
+				"type": "string"
 			}
 		},
 		"annotations": []
