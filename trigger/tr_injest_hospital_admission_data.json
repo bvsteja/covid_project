@@ -2,7 +2,7 @@
 	"name": "tr_injest_hospital_admission_data",
 	"properties": {
 		"annotations": [],
-		"runtimeState": "Stopped",
+		"runtimeState": "Started",
 		"pipelines": [
 			{
 				"pipelineReference": {
@@ -20,7 +20,7 @@
 			"recurrence": {
 				"frequency": "Minute",
 				"interval": 1,
-				"startTime": "2021-12-23T05:04:00Z",
+				"startTime": "2021-12-23T05:12:00Z",
 				"timeZone": "UTC"
 			}
 		}
