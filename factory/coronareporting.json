@@ -1,0 +1,9 @@
+{
+	"name": "coronareporting",
+	"location": "southeastasia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "9384fcfc-a2a8-4357-9d8b-8f23044e084f",
+		"tenantId": "1dd8ab03-8355-496f-b19e-754786ce5708"
+	}
+}
