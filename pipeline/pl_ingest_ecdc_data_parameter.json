@@ -1,5 +1,5 @@
 {
-	"name": "pl_ingest_ecdc_data",
+	"name": "pl_ingest_ecdc_data_parameter",
 	"properties": {
 		"activities": [
 			{
@@ -53,7 +53,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"relativeURL": {
-								"value": "@variables('sourceurl')",
+								"value": "@pipeline().parameters.sourceurl",
 								"type": "Expression"
 							}
 						}
@@ -65,7 +65,7 @@
 						"type": "DatasetReference",
 						"parameters": {
 							"filename": {
-								"value": "@variables('sinkfile')",
+								"value": "@pipeline().parameters.sinkfile",
 								"type": "Expression"
 							}
 						}
@@ -73,14 +73,12 @@
 				]
 			}
 		],
-		"variables": {
+		"parameters": {
 			"sinkfile": {
-				"type": "String",
-				"defaultValue": "hospital_admission.csv"
+				"type": "string"
 			},
 			"sourceurl": {
-				"type": "String",
-				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
+				"type": "string"
 			}
 		},
 		"annotations": []

@@ -1,0 +1,28 @@
+{
+	"name": "trigger1",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "pl_ingest_ecdc_data_parameter",
+					"type": "PipelineReference"
+				},
+				"parameters": {
+					"sinkfile": "covid19/hospitalicuadmissionrates/csv/data.csv",
+					"sourceurl": "hospital_admission.csv"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 1,
+				"startTime": "2021-12-23T05:48:00Z",
+				"timeZone": "UTC"
+			}
+		}
+	}
+}
