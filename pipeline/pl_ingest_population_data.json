@@ -177,6 +177,16 @@
 			}
 		],
 		"concurrency": 1,
+		"variables": {
+			"sourcefilelink": {
+				"type": "String",
+				"defaultValue": "covid19/hospitalicuadmissionrates/csv/data.csv"
+			},
+			"filename": {
+				"type": "String",
+				"defaultValue": "hospital_admission.csv"
+			}
+		},
 		"annotations": [],
 		"lastPublishTime": "2021-12-20T09:37:52Z"
 	},
